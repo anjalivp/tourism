@@ -1,0 +1,109 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover{
+    color:#000;
+    background: #ddd;
+}
+
+#form {
+    width: 350px;
+    height: 410px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+#passwordStrength{
+  width: 30%;
+  height: 5px;
+  margin: 5px 0;
+  display: none;
+}
+#passwordStrength span{
+position: relative;
+height: 100%;
+width: 100%;
+background: lightgrey;
+border-radius: 5px;
+}
+#passwordStrength span:nth-child(2){
+margin: 0 3px;
+}
+#passwordStrength span.active:before{
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+border-radius: 5px;
+}
+#passwordStrength span#poor:before{
+background-color: #ff4757;
+}
+#passwordStrength span#weak:before{
+background-color: orange;
+}
+#passwordStrength span#strong:before{
+background-color: #23ad5c;
+}
+#passwordInfo{
+font-size: 15px;
+}
+#passwordInfo #poor{
+color: red;
+}
+#passwordInfo #weak{
+color: orange;
+}
+#passwordInfo #strong{
+color: green;
+}

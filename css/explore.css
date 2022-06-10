@@ -1,0 +1,16 @@
+h2{
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+.item{
+    padding-bottom: 30px;
+}
+.navbar a:hover{
+    color:#000;
+    background: #ddd;
+}
